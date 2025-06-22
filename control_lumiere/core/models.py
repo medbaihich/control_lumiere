@@ -29,7 +29,7 @@ class Lamp(models.Model):
     gpio_pin = models.PositiveIntegerField(
         null=True, 
         blank=True, 
-        help_text="أدخل رقم الدبوس فقط، مثلاً: 26."
+        help_text="Enter number of pin gpio"
     )
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
